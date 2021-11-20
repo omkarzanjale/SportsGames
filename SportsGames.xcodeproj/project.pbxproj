@@ -12,14 +12,15 @@
 		0403D9712748D30800918549 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0403D96F2748D30800918549 /* Main.storyboard */; };
 		0403D9732748D30800918549 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0403D9722748D30800918549 /* Assets.xcassets */; };
 		0403D9762748D30800918549 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0403D9742748D30800918549 /* LaunchScreen.storyboard */; };
-		0403D9852748D51F00918549 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0403D9842748D51F00918549 /* MainViewController.swift */; };
-		0403D9892748D59A00918549 /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0403D9882748D59A00918549 /* SideMenuViewController.swift */; };
-		0403D98E2748D7D700918549 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0403D98D2748D7D700918549 /* MenuCell.swift */; };
-		0403D9912748DA6800918549 /* AllSportsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0403D9902748DA6800918549 /* AllSportsViewController.swift */; };
 		0403D9942748DA9B00918549 /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0403D9932748DA9B00918549 /* FavoriteViewController.swift */; };
 		0403D9972748DB8E00918549 /* SportsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0403D9962748DB8E00918549 /* SportsTableViewCell.swift */; };
 		0403D99A2748DD1400918549 /* ItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0403D9992748DD1400918549 /* ItemsViewController.swift */; };
 		0403D99D2748DE5400918549 /* ItemsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0403D99C2748DE5400918549 /* ItemsCollectionViewCell.swift */; };
+		0403D9A12748E59E00918549 /* Items.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0403D9A02748E59E00918549 /* Items.swift */; };
+		04B062DB2749045B006246DE /* AllGamesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B062DA2749045B006246DE /* AllGamesViewController.swift */; };
+		04B062E3274912BF006246DE /* DBHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B062E2274912BF006246DE /* DBHelper.swift */; };
+		04B062E627491AB6006246DE /* FavoriteItemsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B062E527491AB6006246DE /* FavoriteItemsTableViewCell.swift */; };
+		04EDA0802748EF59003E7460 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EDA07F2748EF59003E7460 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,14 +31,15 @@
 		0403D9722748D30800918549 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0403D9752748D30800918549 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0403D9772748D30800918549 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0403D9842748D51F00918549 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		0403D9882748D59A00918549 /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
-		0403D98D2748D7D700918549 /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
-		0403D9902748DA6800918549 /* AllSportsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllSportsViewController.swift; sourceTree = "<group>"; };
 		0403D9932748DA9B00918549 /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
 		0403D9962748DB8E00918549 /* SportsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsTableViewCell.swift; sourceTree = "<group>"; };
 		0403D9992748DD1400918549 /* ItemsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsViewController.swift; sourceTree = "<group>"; };
 		0403D99C2748DE5400918549 /* ItemsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsCollectionViewCell.swift; sourceTree = "<group>"; };
+		0403D9A02748E59E00918549 /* Items.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Items.swift; sourceTree = "<group>"; };
+		04B062DA2749045B006246DE /* AllGamesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllGamesViewController.swift; sourceTree = "<group>"; };
+		04B062E2274912BF006246DE /* DBHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBHelper.swift; sourceTree = "<group>"; };
+		04B062E527491AB6006246DE /* FavoriteItemsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteItemsTableViewCell.swift; sourceTree = "<group>"; };
+		04EDA07F2748EF59003E7460 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 				0403D9822748D4FA00918549 /* Controllers */,
 				0403D9692748D30800918549 /* AppDelegate.swift */,
 				0403D96B2748D30800918549 /* SceneDelegate.swift */,
+				04B062E1274912BF006246DE /* Database */,
 				0403D9812748D4E800918549 /* View */,
 				0403D9772748D30800918549 /* Info.plist */,
 			);
@@ -94,9 +97,8 @@
 		0403D9822748D4FA00918549 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				0403D9842748D51F00918549 /* MainViewController.swift */,
-				0403D9882748D59A00918549 /* SideMenuViewController.swift */,
-				0403D9902748DA6800918549 /* AllSportsViewController.swift */,
+				04EDA07F2748EF59003E7460 /* HomeViewController.swift */,
+				04B062DA2749045B006246DE /* AllGamesViewController.swift */,
 				0403D9932748DA9B00918549 /* FavoriteViewController.swift */,
 				0403D9992748DD1400918549 /* ItemsViewController.swift */,
 			);
@@ -106,6 +108,7 @@
 		0403D9832748D50500918549 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0403D9A02748E59E00918549 /* Items.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -113,11 +116,19 @@
 		0403D98B2748D79A00918549 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				0403D98D2748D7D700918549 /* MenuCell.swift */,
 				0403D9962748DB8E00918549 /* SportsTableViewCell.swift */,
 				0403D99C2748DE5400918549 /* ItemsCollectionViewCell.swift */,
+				04B062E527491AB6006246DE /* FavoriteItemsTableViewCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		04B062E1274912BF006246DE /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				04B062E2274912BF006246DE /* DBHelper.swift */,
+			);
+			path = Database;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,16 +201,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0403D9892748D59A00918549 /* SideMenuViewController.swift in Sources */,
-				0403D98E2748D7D700918549 /* MenuCell.swift in Sources */,
+				04B062DB2749045B006246DE /* AllGamesViewController.swift in Sources */,
+				04EDA0802748EF59003E7460 /* HomeViewController.swift in Sources */,
 				0403D9972748DB8E00918549 /* SportsTableViewCell.swift in Sources */,
+				04B062E627491AB6006246DE /* FavoriteItemsTableViewCell.swift in Sources */,
 				0403D99D2748DE5400918549 /* ItemsCollectionViewCell.swift in Sources */,
-				0403D9852748D51F00918549 /* MainViewController.swift in Sources */,
+				0403D9A12748E59E00918549 /* Items.swift in Sources */,
 				0403D99A2748DD1400918549 /* ItemsViewController.swift in Sources */,
 				0403D9942748DA9B00918549 /* FavoriteViewController.swift in Sources */,
+				04B062E3274912BF006246DE /* DBHelper.swift in Sources */,
 				0403D96A2748D30800918549 /* AppDelegate.swift in Sources */,
 				0403D96C2748D30800918549 /* SceneDelegate.swift in Sources */,
-				0403D9912748DA6800918549 /* AllSportsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
