@@ -31,8 +31,9 @@ class HomeViewController: UIViewController {
     @IBAction func loginBtnAction(_ sender: Any) {
         
     }
-    
+    //
     //MARK: Handle Menu UI
+    //
     func handleMenu()  {
         menuTableView.isHidden = false
         sideView.isHidden = false
@@ -74,9 +75,9 @@ class HomeViewController: UIViewController {
 }
 
 extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
-    
+    //
     //MARK: UITableViewDataSource Methods
-    
+    //
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return menuArray.count
     }
@@ -90,8 +91,9 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
             return UITableViewCell()
         }
     }
-    
+    //
     //MARK: UITableViewDelegate Methods
+    //
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if tableView == menuTableView {
             if indexPath.row == 0 {

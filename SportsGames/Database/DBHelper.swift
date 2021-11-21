@@ -7,8 +7,11 @@
 
 import Foundation
 import SQLite3
+
 class DBHelper{
+    
     var db : OpaquePointer?
+    
     init() {
         db = createAndOpen()
         createTable()
@@ -46,23 +49,20 @@ class DBHelper{
         else{
             print("unable to prepared the query")
         }
-        
     }
     
-    func insertUser(sportName:String,itemName : String)  {
+    typealias success = (_ title: String, _ mssg: String)->()
+    func insertIntoFavItems(sportName:String,itemName : String, successClosure: success)  {
         var insertStatement : OpaquePointer?
         let insertStatementQuery = "INSERT INTO FavoriteItems(sportName,itemName) VALUES(?,?)"
         if sqlite3_prepare_v2(db, insertStatementQuery, -1, &insertStatement, nil) == SQLITE_OK{
-            //let id = sqlite3_bind_int(insertStatement, 1, Int32(sport.sportName))
-            //sportName
             let sportNameNSStr = (String(sportName) as NSString).utf8String
             sqlite3_bind_text(insertStatement, 1, sportNameNSStr, -1, nil)
-            //itemName
             let itemNameNSStr = (String(itemName) as NSString).utf8String
             sqlite3_bind_text(insertStatement, 2, itemNameNSStr, -1, nil)
-            
             if sqlite3_step(insertStatement) == SQLITE_DONE{
-                print("insert a query successfully")
+                print("insert query successfully")
+                successClosure("Succeed","Item added to Favorite.")
             }
             else{
                 print("unable to insert a query")
@@ -75,17 +75,13 @@ class DBHelper{
         var selectStatement: OpaquePointer?
         let selectQuery = "SELECT * FROM FavoriteItems"
         var items = [Item]()
-        
-        
         if sqlite3_prepare_v2(db,selectQuery, -1, &selectStatement, nil) == SQLITE_OK{
             while sqlite3_step(selectStatement) == SQLITE_ROW {
-                //et id = Int(sqlite3_column_int(selectStatement, 0))
                 guard let sportName_CStr = sqlite3_column_text(selectStatement, 0) else{
                     print("Error while getting sportName from db!!!")
                     continue
                 }
                 let sportName = String(cString: sportName_CStr)
-                
                 guard let itemName_CStr = sqlite3_column_text(selectStatement, 1) else {
                     print("Error while getting itemName from db!!!")
                     continue
@@ -100,6 +96,6 @@ class DBHelper{
             print("Unable to prepare select query!!!")
             return nil
         }
-    }//displayUser func end
+    }
     
 }

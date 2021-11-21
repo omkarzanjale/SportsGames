@@ -72,13 +72,13 @@
 		0403D9682748D30800918549 /* SportsGames */ = {
 			isa = PBXGroup;
 			children = (
-				0403D98B2748D79A00918549 /* Cells */,
-				0403D9832748D50500918549 /* Model */,
-				0403D9822748D4FA00918549 /* Controllers */,
 				0403D9692748D30800918549 /* AppDelegate.swift */,
 				0403D96B2748D30800918549 /* SceneDelegate.swift */,
+				0403D9832748D50500918549 /* Model */,
 				04B062E1274912BF006246DE /* Database */,
 				0403D9812748D4E800918549 /* View */,
+				0403D98B2748D79A00918549 /* Cells */,
+				0403D9822748D4FA00918549 /* Controllers */,
 				0403D9772748D30800918549 /* Info.plist */,
 			);
 			path = SportsGames;

@@ -16,12 +16,12 @@ class FavoriteViewController: UIViewController {
         super.viewDidLoad()
         favoriteItemsTableView.tableFooterView = UIView()
     }
-    
 }
-
+//
+//MARK: UITableViewDataSource
+//
 extension FavoriteViewController: UITableViewDataSource {
-    //MARK: UITableViewDataSource Methods
-    
+   
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return items.count
     }
@@ -37,10 +37,11 @@ extension FavoriteViewController: UITableViewDataSource {
         }
     }
 }
-
+//
+//MARK: UITableViewDelegate
+//
 extension FavoriteViewController: UITableViewDelegate {
-    
-    //MARK: UITableViewDelegate Methods
+
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         180
     }

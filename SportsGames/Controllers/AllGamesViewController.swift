@@ -16,10 +16,10 @@ class AllGamesViewController: UIViewController {
         AllGamesTableView.tableFooterView = UIView()
     }
 }
-
+//
+//MARK: UITableViewDataSource
+//
 extension AllGamesViewController: UITableViewDataSource {
-    
-    //MARK: UITableViewDataSource Methods
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return sports.count
@@ -32,14 +32,13 @@ extension AllGamesViewController: UITableViewDataSource {
         } else {
             return UITableViewCell()
         }
-            
     }
-    
 }
-
+//
+//MARK: UITableViewDelegate
+//
 extension AllGamesViewController: UITableViewDelegate {
     
-    //MARK: UITableViewDelegate Methods
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if let itemsViewControllerObj = storyboard?.instantiateViewController(withIdentifier: "ItemsViewController") as? ItemsViewController {
             itemsViewControllerObj.sportName = sports[indexPath.row]
